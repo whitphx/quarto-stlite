@@ -1,0 +1,11 @@
+---
+title: "Stlite Example"
+filters:
+  - stlite
+---
+
+## Heading
+
+This filter adds formatting to heading text.
+
+
