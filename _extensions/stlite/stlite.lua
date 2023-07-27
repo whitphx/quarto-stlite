@@ -1,7 +1,7 @@
 local stlite_sharing_url = "https://share.stlite.net/"
 
 function CodeBlock(el)
-  if el.attr.classes[1] == "stlite" then
+  if string.match(el.attr.classes[1], "python:stlite") then
       encoded_code = pandoc.pipe("python", {"-c", "import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))"}, el.text)
 
       src = stlite_sharing_url .. "?embed=true" .. "#code=" .. encoded_code
