@@ -8,7 +8,7 @@ filters:
 
 Embed a stlite app
 
-```{python:stlite}
+```{stlite-python}
 import streamlit as st
 
 st.title("stlite Quarto embedding example")
